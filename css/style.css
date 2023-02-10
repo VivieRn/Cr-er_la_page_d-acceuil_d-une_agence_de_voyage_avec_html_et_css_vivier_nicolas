@@ -3,8 +3,13 @@
     color: #252525;
 }
 
+h1, h2, h3, p, {
+    margin-bottom: 0;
+}
+
+/* Entête du site */
+
 header {
-    padding: 2em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,8 +26,20 @@ nav a:hover {
     border-top: 2px solid #0065FC;
 }
 
+.logo {
+    width: 25%;
+    height: 25%;
+    padding: 3em;
+}
+
+/* Corps du site */
+
+section {
+    margin-left: 3em;
+}
+
 #menu {
-    margin: 0px;
+    margin-left: 0px;
     padding: 0px;
 }
 
@@ -47,25 +64,102 @@ nav a:hover {
     align-items: center;
 }
 
-form {
+.contenuPrincipal {
     display: flex;
-    justify-content: center;
-  }
-  
-  input[type="text"] {
+    justify-content: start;
+}
+
+.imgButton {
+    height: 150px;
+    width: 280px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.populaire {
+    display: flex;
+    flex-direction: row;
+}
+
+ /* Barre de recherche avec saisie de texte */
+
+input[type="text"] {
+    margin-left: 1em;
     padding: 8px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 300px;
+    font-weight: 700;
+    border: none;
+    width: 332px;
+    height: 49px;
     margin-right: 10px;
-  }
+}
+
+/* Apparence des boutons */
   
-  button[type="submit"] {
-    padding: 8px 20px;
+.buttonSearch[type="submit"]{
+    padding: 8px 10px;
     background-color: #0065FC;
     color: white;
+    font-weight: 700;
     border: none;
-    border-radius: 0px, 0px, 8px, 8px;
+    border-radius: 0px 15px 15px 0px;
+    height: 65px;
     cursor: pointer;
+}
+
+.buttonFiltre{
+    margin: 1.5em;
+    padding: 8px 20px;
+    background-color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px 20px 20px 20px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.buttonInfo{
+    padding: 8px 20px;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttonHebergements {
+    
+    background-color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border: 2px solid #D9D9D9;
+    border-radius: 20px 20px 20px 20px;
+    width: 300px;
+    height: 280px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Comportement des boutons au survol */
+
+button:hover {
+    background-color: #DEEBFF;
+    border: 1px solid #0065FC;
+}
+
+.buttonSearch:hover {
+    background-color: white;
+    color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* Gestion de la partie Hébergements */
+
+.grid-hebergements {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    margin-bottom: 5px;
   }
+
