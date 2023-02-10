@@ -1,5 +1,52 @@
 * {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
-    color: #0065FC;
+    color: #252525;
 }
+
+header {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#recherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 20px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0px, 0px, 8px, 8px;
+    cursor: pointer;
+  }
