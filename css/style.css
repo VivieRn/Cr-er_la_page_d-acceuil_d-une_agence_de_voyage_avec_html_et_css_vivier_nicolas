@@ -32,7 +32,7 @@ nav a:hover {
     padding: 3em;
 }
 
-/* Corps du site */
+/* Section recherche */
 
 section {
     margin-left: 3em;
@@ -64,25 +64,9 @@ section {
     align-items: center;
 }
 
-.contenuPrincipal {
-    display: flex;
-    justify-content: start;
-}
-
-.imgButton {
-    height: 150px;
-    width: 280px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.populaire {
-    display: flex;
-    flex-direction: row;
-}
-
  /* Barre de recherche avec saisie de texte */
 
-input[type="text"] {
+ input[type="text"] {
     margin-left: 1em;
     padding: 8px 10px;
     font-weight: 700;
@@ -152,6 +136,24 @@ button:hover {
     color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
+}
+
+/* Contenu principal */
+
+.contenuPrincipal {
+    display: flex;
+    justify-content: start;
+}
+
+.imgButton {
+    height: 150px;
+    width: 280px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.populaire {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Gestion de la partie Hébergements */
