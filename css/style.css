@@ -3,8 +3,24 @@
     color: #252525;
 }
 
-h1, h2, h3, p {
-    margin-bottom: 0;
+body {
+    padding-right: 2em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.fa-solid {
+    color: #0065FC;
+}
+
+.fa-location-dot {
+    color: black;
 }
 
 /* Entête du site */
@@ -16,7 +32,7 @@ header {
     justify-content: space-between;
 }
 
-nav a {
+nav, a {
     padding: 1em;
     text-decoration: none;
 }
@@ -27,16 +43,17 @@ nav a:hover {
 }
 
 .logo {
-    width: 25%;
-    height: 25%;
-    padding: 3em;
+    width: 40%;
+    height: 40%;
+    margin: 1em;
 }
-
-/* Section recherche */
 
 section {
     margin-left: 3em;
+    padding: 1em;
 }
+
+/* Section recherche */
 
 #menu {
     margin-left: 0px;
@@ -54,7 +71,7 @@ section {
 #filtres {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
 
 }
 
@@ -110,20 +127,6 @@ section {
     cursor: pointer;
 }
 
-.buttonHebergements {
-    
-    background-color: white;
-    font-size: 1em;
-    font-weight: 700;
-    border: 2px solid #D9D9D9;
-    border-radius: 20px 20px 20px 20px;
-    width: 300px;
-    height: 280px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Comportement des boutons au survol */
 
 button:hover {
@@ -142,18 +145,8 @@ button:hover {
 
 .contenuPrincipal {
     display: flex;
-    justify-content: start;
-}
-
-.imgButton {
-    height: 150px;
-    width: 280px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.populaire {
-    display: flex;
     flex-direction: row;
+    justify-content: baseline;
 }
 
 /* Gestion de la partie Hébergements */
@@ -163,5 +156,77 @@ button:hover {
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px;
     margin-bottom: 5px;
+    gap: 20px;
   }
 
+.buttonHebergements {
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 20px 20px 20px 20px;
+    width: 300px;
+    height: 280px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.50); 
+}
+
+.imgButton {
+    height: 180px;
+    width: 280px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px;
+}
+
+.texteButtonHebergements {
+    padding-top: 0;
+    padding-left: 10px;
+}
+
+.afficherPlus {
+    margin-top: 4em;
+    font-size: large;
+}
+
+/* Gestion de la partie "Les plus populaires" */
+
+.imgButtonPopulaires {
+    padding: 5px;
+    width: 225px;
+    border-radius: 20px 0px 00px 20px;
+}
+
+.buttonPopulaires {
+    
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 20px 20px 20px 20px;
+    width: 450px;
+    height: 220px;
+    cursor: pointer;
+    display: flex;
+    text-align: space;
+    padding-bottom: 5px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.50);
+    margin-bottom: 20px;
+}
+
+.textButtonPopulaires {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notation {
+    margin-top: 90px;
+}
+
+.populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
