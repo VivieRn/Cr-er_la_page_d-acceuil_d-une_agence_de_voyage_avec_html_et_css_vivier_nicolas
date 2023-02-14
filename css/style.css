@@ -50,7 +50,7 @@ nav a:hover {
 
 section {
     margin-left: 3em;
-    padding: 1em;
+    padding: 0em;
 }
 
 /* Section recherche */
@@ -79,6 +79,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 2em;
 }
 
  /* Barre de recherche avec saisie de texte */
@@ -146,7 +147,7 @@ button:hover {
 .contenuPrincipal {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
+    justify-content: space-around;
 }
 
 /* Gestion de la partie Hébergements */
@@ -155,7 +156,6 @@ button:hover {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px;
-    margin-bottom: 5px;
     gap: 20px;
   }
 
@@ -179,6 +179,7 @@ button:hover {
     width: 280px;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
+    object-fit: cover;
 }
 
 .texteButtonHebergements {
@@ -187,16 +188,23 @@ button:hover {
 }
 
 .afficherPlus {
-    margin-top: 4em;
+    margin-top: 3em;
     font-size: large;
 }
 
 /* Gestion de la partie "Les plus populaires" */
 
+.populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .imgButtonPopulaires {
     padding: 5px;
     width: 225px;
     border-radius: 20px 0px 00px 20px;
+    object-fit: cover;
 }
 
 .buttonPopulaires {
@@ -225,8 +233,39 @@ button:hover {
     margin-top: 90px;
 }
 
-.populaires {
+/* Gestion de la partie Activité */
+
+.flexActivités {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.imgActivités {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.containerActivités {
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+/* Pied de page */
+
+.pdp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: baseline;
+
+}
+
+.cardFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
