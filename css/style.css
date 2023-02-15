@@ -1,11 +1,11 @@
+/* Fonctions générales */
+
 * {
     font-family: 'Raleway', sans-serif;
     color: #252525;
 }
 
-body {
-    padding-right: 2em;
-}
+
 
 h1 {
     margin-bottom: 1em;
@@ -13,6 +13,11 @@ h1 {
 
 h2, p {
     margin: 0;
+}
+
+section {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .fa-solid {
@@ -30,6 +35,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 3em;
 }
 
 nav, a {
@@ -37,27 +45,16 @@ nav, a {
     text-decoration: none;
 }
 
-nav a:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-}
-
 .logo {
-    width: 40%;
-    height: 40%;
-    margin: 1em;
-}
-
-section {
-    margin-left: 3em;
-    padding: 0em;
+    width: 30%;
+    height: 30%;
 }
 
 /* Section recherche */
 
 #menu {
-    margin-left: 0px;
-    padding: 0px;
+    margin: 3em;
+    
 }
 
 #recherche {
@@ -87,11 +84,11 @@ section {
  input[type="text"] {
     margin-left: 1em;
     padding: 8px 10px;
-    font-weight: 700;
     border: none;
     width: 332px;
-    height: 49px;
-    margin-right: 10px;
+    height: 28px;
+    margin-left: 20px;
+    margin-right: 3px;
 }
 
 /* Apparence des boutons */
@@ -103,7 +100,8 @@ section {
     font-weight: 700;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    height: 65px;
+    height: 45px;
+    width: 125px;
     cursor: pointer;
 }
 
@@ -124,11 +122,16 @@ section {
     padding: 8px 20px;
     background-color: white;
     border: 1px solid #D9D9D9;
-    border-radius: 50%;
+    border-radius: 55%;
     cursor: pointer;
 }
 
 /* Comportement des boutons au survol */
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
 
 button:hover {
     background-color: #DEEBFF;
@@ -156,35 +159,33 @@ button:hover {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px;
-    gap: 20px;
+    gap: 50px;
   }
 
 .buttonHebergements {
     background-color: white;
     border: 2px solid #D9D9D9;
     border-radius: 20px 20px 20px 20px;
-    width: 300px;
+    width: 330px;
     height: 280px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-top: 5px;
     padding-bottom: 5px;
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.50); 
 }
 
 .imgButton {
-    height: 180px;
-    width: 280px;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
     object-fit: cover;
+    height: 180px;
 }
 
 .texteButtonHebergements {
     padding-top: 0;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .afficherPlus {
@@ -202,9 +203,9 @@ button:hover {
 
 .imgButtonPopulaires {
     padding: 5px;
-    width: 225px;
     border-radius: 20px 0px 00px 20px;
     object-fit: cover;
+    width: 180px;
 }
 
 .buttonPopulaires {
@@ -212,7 +213,7 @@ button:hover {
     background-color: white;
     border: 2px solid #D9D9D9;
     border-radius: 20px 20px 20px 20px;
-    width: 450px;
+    width: 400px;
     height: 220px;
     cursor: pointer;
     display: flex;
@@ -223,7 +224,7 @@ button:hover {
 }
 
 .textButtonPopulaires {
-    padding-top: 5px;
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
