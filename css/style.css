@@ -46,23 +46,16 @@ table {
 
 /* Fonctions générales */
 
-nav {
-    margin-bottom: 1em;
-    margin-top: 14px;
-}
-
 h1, h2, h3, p, a {
     margin: 0;
+    margin-bottom: 15px;
     font-family: 'Raleway', sans-serif;
     color: #252525;
     text-decoration: none;
 }
 
 section {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 2em;
 }
 
 .fa-solid {
@@ -106,17 +99,12 @@ section {
 
 /* Section recherche */
 
-.menuRecherche {
-    margin: 2em;
-    
-}
-
 .recherche {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin: 1em;
+    margin: 3px;
 }
 
 .filtre {
@@ -129,11 +117,7 @@ section {
 .info {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-bottom: 2em;
-}
-
-.infoTexte {
+    align-items: baseline;
     font-size: large;
 }
 
@@ -149,14 +133,13 @@ section {
 /* Apparence des boutons */
   
 .buttonSearch[type="submit"]{
-    margin: 8px;
     background-color: #0065FC;
     color: white;
     font-weight: 700;
+    font-size: 15px;
     border: none;
     border-radius: 0 15px 15px 0;
-    height: 45px;
-    width: 125px;
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -167,8 +150,9 @@ section {
     font-weight: 700;
     border: 2px solid #D9D9D9;
     border-radius: 20px 20px 20px 20px;
-    width: 250px;
-    height: 50px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     cursor: pointer;
 }
 
@@ -176,8 +160,8 @@ section {
     background-color: white;
     border: 2px solid #D9D9D9;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
     margin: 1em;
 }
@@ -189,16 +173,16 @@ nav a:hover {
     border-top: 2px solid #0065FC;
 }
 
-button:hover {
-    background-color: #DEEBFF;
-    border: 1px solid #0065FC;
-}
-
 .buttonSearch:hover {
     background-color: white;
     color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
+}
+
+button:hover {
+    background-color: #DEEBFF;
+    border: 1px solid #0065FC;
 }
 
 /* Contenu principal */
@@ -214,8 +198,8 @@ button:hover {
 .grid-hebergement {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
-    gap: 50px;
+    grid-template-rows: 270px ;
+    gap: 40px;
   }
 
 .cardHebergement {
@@ -223,12 +207,11 @@ button:hover {
     border: 2px solid #D9D9D9;
     border-radius: 20px 20px 20px 20px;
     width: 320px;
-    height: 280px;
+    height: 295px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 5px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.50);
     overflow: hidden;
 }
@@ -253,11 +236,11 @@ button:hover {
     flex-direction: column;
     justify-content: space-around;
     margin-left: 1em;
+    padding-bottom: 5px;
 }
 
 .afficherPlus {
     font-size: large;
-    margin-bottom: 35px;
 }
 
 /* Gestion de la partie "Les plus populaires" */
@@ -296,7 +279,7 @@ button:hover {
   
 .cardContentPopulaire {
     flex: 2;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -309,7 +292,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 2em;
 }
 
 .imgActivités {
@@ -332,23 +314,13 @@ figcaption {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 50px;
 }
 
 .cardFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 8em;
-    padding-left: 4em;
-}
-
-.cardFooter {
-    padding: 25px;
-}
-
-.cardFooter a {
-    padding: 7px;
+    padding-left: 10em;
 }
 
 /* Adaptation pour desktop */
@@ -377,28 +349,39 @@ figcaption {
 
     /* Général */
 
-    
-
     section {
         margin: auto;
+        margin-top: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
     }
 
     /* Entête */
 
     .entete {
         flex-direction: column;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        margin: 1em;
+        padding: 0;
+    }
+
+    .entete a {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin-left: 0;
     }
 
     .logo {
         width: 50%;
         height: 50%;
+        padding: 0;
         margin-bottom: 10px;
     }
 
-    .liensMenu {
+    .liensMenu a {
+        padding-bottom: 15px;
         font-size: larger;
         font-weight: 700;
     }
@@ -413,10 +396,13 @@ figcaption {
     
 
     /* Partie recherche */
-    section .menuRecherche {
+    .menuRecherche {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: baseline;
         font-size: 20px;
+        margin: 15px;
+        padding: auto;
     }
     
 
@@ -445,21 +431,20 @@ figcaption {
 
     .containerFiltre {
         display: flex;
-        justify-content: center;
+        
     }
 
     .filtres {
         display: grid;
-        grid-template-columns: 160px 160px;
-        grid-template-rows: 40px;
-        gap: 15px;
+        grid-template-columns: 100px 100px;
+        gap: 20px;
     }
 
     .buttonFiltre {
-        width: 170px;
+        width: 150%;
         font-size: 12px;
-        margin-left: 0;
-        margin-top: 10px;
+        padding: 10px;
+        
     }
 
     /* Contenu principal */
@@ -492,6 +477,7 @@ figcaption {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
 
     .cardHebergement {
