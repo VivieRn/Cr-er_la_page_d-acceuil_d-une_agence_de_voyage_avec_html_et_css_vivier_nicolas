@@ -341,6 +341,17 @@ figcaption {
     section {
         margin: 10px;
     }
+
+    .contenuPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardPopulaireFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 /* Adaptation pour smartphone */
@@ -350,7 +361,6 @@ figcaption {
     /* Général */
 
     section {
-        margin: auto;
         margin-top: 1em;
     }
 
@@ -402,7 +412,6 @@ figcaption {
         align-items: baseline;
         font-size: 20px;
         margin: 15px;
-        padding: auto;
     }
     
 
@@ -425,26 +434,26 @@ figcaption {
     .filtre {
         display: flex;
         flex-direction: column;
-        padding-bottom: 10px;
         align-items: baseline;
     }
 
     .containerFiltre {
         display: flex;
+        justify-content: space-between;
         
     }
 
     .filtres {
         display: grid;
-        grid-template-columns: 100px 100px;
-        gap: 20px;
+        grid-template-columns: repeat(2, 100px);
+        grid-gap: 10px;
     }
 
     .buttonFiltre {
         width: 150%;
         font-size: 12px;
         padding: 10px;
-        
+        margin: 0px;
     }
 
     /* Contenu principal */
@@ -506,5 +515,6 @@ figcaption {
     .cardFooter {
         margin: 0;
         margin-bottom: 15px;
+        padding-left: 2em;
     }
 }
