@@ -35,21 +35,24 @@
       </nav>
     </header>
     <!--Menu de recherche-->
-    <section class="menuRecherche">
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre-ville ou en pleine nature</p>
+    <section>
+      <div class="menuRecherche">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+      </div>
       <div class="recherche">
-        <i class="fa-solid fa-location-dot"></i>
         <form action="#" method="get">
+          <i class="fa-solid fa-location-dot"></i>
           <input type="text" placeholder="Marseille, France" />
           <button class="buttonSearch" type="submit">Rechercher</button>
+          <button class="buttonSearchMobile" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
       </div>
-      <div class="containerFiltre">
-        <div class="filtre">
-          <div>
-            <h3>Filtres</h3>
-          </div>
+      <div class="menuRecherche">
+        <div class="containerFiltres">
+          <h3>Filtres</h3>
           <div class="filtres">
             <button class="buttonFiltre" id="buttonEconomique">
               <i class="fa-solid fa-money-bill-wave"></i>

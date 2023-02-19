@@ -66,6 +66,10 @@ section {
     color: black;
 }
 
+.fa-magnifying-glass {
+    color: white;
+}
+
 /* Entête du site */
 
 .entete {
@@ -107,11 +111,10 @@ section {
     margin: 3px;
 }
 
-.filtre {
+.containerFiltres {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-
 }
 
 .info {
@@ -143,6 +146,10 @@ section {
     cursor: pointer;
 }
 
+.buttonSearchMobile {
+    display: none;
+}
+
 .buttonFiltre{
     margin: 1.5em;
     background-color: white;
@@ -170,7 +177,7 @@ section {
 
 nav a:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 .buttonSearch:hover {
@@ -183,6 +190,11 @@ nav a:hover {
 button:hover {
     background-color: #DEEBFF;
     border: 1px solid #0065FC;
+}
+
+.afficherPlus a:hover {
+    border-top: 0;
+    border-bottom: 2px solid #252525;
 }
 
 /* Contenu principal */
@@ -204,7 +216,7 @@ button:hover {
 
 .cardHebergement {
     background-color: white;
-    border: 2px solid #D9D9D9;
+    border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
     width: 320px;
     height: 295px;
@@ -212,7 +224,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.50);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
     overflow: hidden;
 }
 
@@ -253,13 +265,13 @@ button:hover {
 
 .cardPopulaire {
     display: flex;
-    border: 2px solid #D9D9D9;
+    border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
     width: 400px;
     height: 220px;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.50);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
     margin-bottom: 15px;
   }
   
@@ -358,49 +370,41 @@ figcaption {
 
 @media (max-width: 767px) {
 
-    /* Général */
-
     section {
-        margin-top: 1em;
-    }
-
-    h1 {
-        font-size: 1.5em;
+        margin: 1em;
     }
 
     /* Entête */
 
     .entete {
         flex-direction: column;
-        margin-bottom: 15px;
-        margin: 1em;
-        padding: 0;
+        margin: 0;
     }
 
     .entete a {
         display: flex;
-        flex-direction: row;
         justify-content: center;
     }
 
     .logo {
         width: 50%;
         height: 50%;
-        padding: 0;
-        margin-bottom: 10px;
     }
 
     .liensMenu a {
-        padding-bottom: 15px;
-        font-size: larger;
-        font-weight: 700;
+        font-size: medium;
+        padding: 1em;
+        padding-left: 3em;
+        padding-right: 3.2em;
+        margin: 0;
+        margin-bottom: 1em;
     }
 
 
     nav a:hover {
         color: #0065FC;
         border-top: 0;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
     }
 
     
@@ -409,51 +413,57 @@ figcaption {
     .menuRecherche {
         display: flex;
         flex-direction: column;
-        align-items: baseline;
-        font-size: 20px;
-        margin: 15px;
+        align-items: center;
     }
-    
 
-    .recherche {
-        margin: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    form {
+        width: 73%;
+    }
+
+    div.recherche {
+        justify-content: center;
     }
 
     input[type="text"] {
-        width: 150px;
+        width: 60%;
     }
 
-    button.buttonSearch[type="submit"] {
-        width: 75px;
-        height: 40px;
-        font-size: 10px;
+    button.buttonSearch {
+        display: none;
     }
 
-    .filtre {
+    .buttonSearchMobile {
+        display: inline;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .buttonSearchMobile:hover {
+        background-color: #D9D9D9;
+        color: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .containerFiltres {
         display: flex;
         flex-direction: column;
-        align-items: baseline;
-    }
-
-    .containerFiltre {
-        display: flex;
-        justify-content: space-between;
-        
     }
 
     .filtres {
         display: grid;
-        grid-template-columns: repeat(2, 100px);
-        grid-gap: 10px;
+        grid-template-columns: repeat(2, 150px);
+        grid-gap: 15px;
     }
 
     .buttonFiltre {
-        width: 150%;
+        width: 100%;
         font-size: 12px;
         padding: 10px;
-        margin: 0px;
+        margin: 0;
     }
 
     /* Contenu principal */
@@ -504,6 +514,11 @@ figcaption {
     .flexActivités {
         flex-direction: column;
         align-items: center;
+    }
+
+    .imgActivités {
+        width: 330px;
+        height: 199px;  
     }
 
     /* Pied de page */
