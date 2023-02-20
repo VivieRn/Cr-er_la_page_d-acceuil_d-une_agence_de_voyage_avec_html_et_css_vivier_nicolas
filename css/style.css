@@ -203,14 +203,16 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
 }
 
 /* Gestion de la partie Hébergements */
 
 .grid-hebergement {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 20px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 270px ;
+    gap: 40px;
   }
 
 .cardHebergement {
@@ -238,7 +240,8 @@ button:hover {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     height: 185px;
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
     margin: 5px;
 }
 
@@ -267,7 +270,8 @@ button:hover {
     display: flex;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 220px;
     cursor: pointer;
     overflow: hidden;
@@ -285,7 +289,8 @@ button:hover {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
     height: 210px;
-    width: 182px;
+    max-width: 182px;
+    width: 100%;
     margin: 5px;
 }
   
@@ -303,15 +308,15 @@ button:hover {
 .flexActivités {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .imgActivités {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
+    width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    margin: 20px;
 }
 
 figcaption {
@@ -326,67 +331,33 @@ figcaption {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-around;
 }
 
 .cardFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10em;
 }
 
 /* Adaptation pour desktop */
 
-
-
-@media screen and (max-width: 1400px) {
-    body {
-        max-width: 1400px;
-    }
+@media (max-width: 1400px) {
+    
 }
 
 /* Adaptation pour les tablette */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
-    body {
-        width: 100%;
-    }
-    
-    header {
-        width: 99%;
-    }
-    
-    section {
-        width: 80%;
-    }
-    
-    footer {
-        width: 70%;
-    }
 
-    .entete {
-        flex-shrink: 0;
-        flex-grow: 1;
+
+    section {
+        margin: 10px;
     }
 
     .contenuPrincipal {
         display: flex;
         flex-direction: column;
-    }
-
-    .grid-hebergement {
-        gap: 15px;
-    }
-
-    .cardHebergement {
-        width: 320px;
-        height: 199px;
-    }
-
-    .cardImageHebergement img {
-        width: 320px;
-        height: 100px;
     }
 
     .cardPopulaireFlex {
@@ -399,6 +370,10 @@ figcaption {
 /* Adaptation pour smartphone */
 
 @media (max-width: 767px) {
+
+    section {
+        margin: 1em;
+    }
 
     /* Entête */
 
@@ -463,7 +438,7 @@ figcaption {
         background-color: #0065FC;
         border: none;
         border-radius: 0 15px 15px 0;
-        padding: 15px;
+        padding: 3%;
         cursor: pointer;
     }
 
@@ -496,6 +471,12 @@ figcaption {
 
     .contenuPrincipal {
         flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contenuPrincipal h1 {
+        display: flex;
+        align-items: flex-start;
     }
 
     /* Partie populaire */
@@ -507,12 +488,14 @@ figcaption {
     }
 
     .cardPopulaire {
-        width: 335px;
+        max-width: 335px;
+        width: 100%;
         height: 199px;
     }
 
     .cardImagePopulaire img {
-        width: 160px;
+        max-width: 160px;
+        width: 100%;
         height: 190px;
     }
 
@@ -526,12 +509,14 @@ figcaption {
     }
 
     .cardHebergement {
-        width: 335px;
+        max-width: 345px;
+        width: 100%;
         height: 199px;
     }
 
     .cardImageHebergement img {
-        width: 330px;
+        max-width: 330px;
+        width: 100%;
         height: 100px;
     }
 
