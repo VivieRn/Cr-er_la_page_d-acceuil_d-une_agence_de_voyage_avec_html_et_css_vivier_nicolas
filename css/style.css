@@ -215,17 +215,16 @@ button:hover {
   }
 
 .cardHebergement {
-    background-color: white;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    max-width: 320px;
+    max-width: 300px;
     width: 100%;
-    height: 285px;
+    height: 220px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: left;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
     overflow: hidden;
 }
 
@@ -238,8 +237,8 @@ button:hover {
 .cardImageHebergement img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    height: 185px;
-    max-width: 310px;
+    height: 120px;
+    max-width: 295px;
     width: 100%;
     margin: 5px;
 }
@@ -269,12 +268,12 @@ button:hover {
     display: flex;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
-    height: 220px;
+    height: 180px;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
     margin-bottom: 15px;
   }
   
@@ -287,7 +286,7 @@ button:hover {
 .cardImagePopulaire img {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
-    height: 210px;
+    height: 160px;
     max-width: 182px;
     width: 100%;
     margin: 5px;
@@ -311,8 +310,8 @@ button:hover {
 }
 
 .imgActivités {
-    max-width: 300px;
-    height: 400px;
+    max-width: 225px;
+    height: 325px;
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -341,8 +340,11 @@ figcaption {
 
 /* Adaptation pour desktop */
 
-@media (max-width: 1400px) {
-    
+@media (min-width: 1401px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
 }
 
 /* Adaptation pour les tablette */
