@@ -210,9 +210,8 @@ button:hover {
 
 .grid-hebergement {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 270px ;
-    gap: 40px;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px;
   }
 
 .cardHebergement {
@@ -352,7 +351,12 @@ figcaption {
 
 
     section {
-        margin: 10px;
+        margin: 1%;
+    }
+
+    .filtres {
+        display: flex;
+        justify-content: flex-start;
     }
 
     .contenuPrincipal {
@@ -364,6 +368,14 @@ figcaption {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .cardPopulaire {
+        margin: 1%;
+    }
+
+    .flexActivités a {
+        margin: 1%;
     }
 }
 
@@ -392,13 +404,14 @@ figcaption {
         height: 50%;
     }
 
-    .liensMenu a {
+    .entete.liensMenu{
+        justify-content: space-between;
         font-size: medium;
+    }
+
+    .liensMenu a {
+        
         padding: 1em;
-        padding-left: 3em;
-        padding-right: 3.2em;
-        margin: 0;
-        margin-bottom: 1em;
     }
 
 
@@ -415,10 +428,6 @@ figcaption {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    form {
-        width: 73%;
     }
 
     div.recherche {
@@ -474,11 +483,6 @@ figcaption {
         align-items: center;
     }
 
-    .contenuPrincipal h1 {
-        display: flex;
-        align-items: flex-start;
-    }
-
     /* Partie populaire */
 
     .cardPopulaireFlex {
@@ -488,13 +492,13 @@ figcaption {
     }
 
     .cardPopulaire {
-        max-width: 335px;
+        max-width: 299px;
         width: 100%;
         height: 199px;
     }
 
     .cardImagePopulaire img {
-        max-width: 160px;
+        max-width: 150px;
         width: 100%;
         height: 190px;
     }
@@ -509,13 +513,13 @@ figcaption {
     }
 
     .cardHebergement {
-        max-width: 345px;
+        max-width: 300px;
         width: 100%;
         height: 199px;
     }
 
     .cardImageHebergement img {
-        max-width: 330px;
+        max-width: 295px;
         width: 100%;
         height: 100px;
     }
@@ -527,9 +531,15 @@ figcaption {
         align-items: center;
     }
 
+    #activite h1 {
+       display: flex;
+       justify-content: center;
+       margin-right: 3.6em;
+    }
+
     .imgActivités {
-        width: 330px;
-        height: 199px;  
+        width: 300px;
+        height: 180px;  
     }
 
     /* Pied de page */
