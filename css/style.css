@@ -54,6 +54,10 @@ h1, h2, h3, p, a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 110%;
+}
+
 section {
     margin: 2em;
 }
@@ -92,11 +96,11 @@ section {
     flex-direction: row;
 }
 
-.liensMenu {
+.lienMenu {
     padding-right: 1em;
 }
 
-.liensMenu a {
+.lienMenu a {
     padding-top: 15px;
     font-size: 18px;
 }
@@ -111,7 +115,7 @@ section {
     margin: 3px;
 }
 
-.containerFiltres {
+.containerFiltre {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -202,30 +206,31 @@ button:hover {
 .contenuPrincipal {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: center;
+    
 }
 
-/* Gestion de la partie Hébergements */
+/* Partie Hébergements */
 
-.grid-hebergement {
-    display: grid;
-    grid-template-columns: repeat(3, 280px);
-    gap: 10px;
+.containerHebergement {
+    display: flex;
+    flex-direction: row;
+    position: relative;
   }
 
 .cardHebergement {
-    border: 2px solid white;
-    border-radius: 20px 20px 20px 20px;
-    max-width: 300px;
-    width: 100%;
-    height: 220px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
+    border: 2px solid white;
+    border-radius: 20px 20px 20px 20px;
+    max-width: 270px;
+    height: 220px;
+    width: 100%;
+    cursor: pointer;
     overflow: hidden;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
+    margin: 1%;
+    
 }
 
 .cardImageHebergement {
@@ -238,12 +243,11 @@ button:hover {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     height: 120px;
-    max-width: 295px;
-    width: 100%;
+    width: 265px;
     margin: 5px;
 }
 
-.texteCardHebergement {
+.cardContentHebergement {
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -268,9 +272,9 @@ button:hover {
     display: flex;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    max-width: 300px;
+    max-width: 270px;
+    height: 190px;
     width: 100%;
-    height: 180px;
     cursor: pointer;
     overflow: hidden;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
@@ -286,9 +290,8 @@ button:hover {
 .cardImagePopulaire img {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
-    height: 160px;
-    max-width: 182px;
-    width: 100%;
+    height: 180px;
+    width: 120px;
     margin: 5px;
 }
   
@@ -303,29 +306,34 @@ button:hover {
 
 /* Gestion de la partie Activité */
 
-.flexActivités {
+.containerActivite {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.imgActivités {
-    max-width: 225px;
-    height: 325px;
+.cardActivite {
+    margin: 1em;
+}
+
+.cardImageActivite {
+    max-width: 240px;
+    height: 350px;
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 figcaption {
-    padding-left: 30px;
-    margin-bottom: 2em;
-    font-weight: 700;
+    padding-left: 16px;
+    margin-top: 5%;
+    font-size: 80%;
+    font-weight: 600;
 }
 
 /* Pied de page */
 
-.pdp {
+.piedDePage {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -351,10 +359,13 @@ figcaption {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
+/* Général */
 
     section {
         margin: 1%;
     }
+
+/* Menu de recherche */    
 
     div.filtres {
         display: flex;
@@ -365,12 +376,16 @@ figcaption {
         padding: 15px;
     }
 
+/* Contenu principal */    
+
     .contenuPrincipal {
         display: flex;
         flex-direction: column;
     }
 
-    .cardPopulaireFlex {
+/* Patie Populaire */    
+
+    .containerCardPopulaire {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -380,7 +395,9 @@ figcaption {
         margin: 1%;
     }
 
-    .flexActivités a {
+/* Partie Activité */
+
+    .containerActivite a {
         margin: 1%;
     }
 }
@@ -391,6 +408,7 @@ figcaption {
 
     section {
         margin: 1em;
+        text-align: left;
     }
 
     /* Entête */
@@ -406,17 +424,16 @@ figcaption {
     }
 
     .logo {
-        width: 50%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
     }
 
-    .entete.liensMenu{
-        justify-content: space-between;
+    .entete.lienMenu{
+        justify-content: space-around;
         font-size: medium;
     }
 
-    .liensMenu a {
-        
+    .lienMenu a {
         padding: 1em;
     }
 
@@ -464,12 +481,12 @@ figcaption {
         border-radius: 0 15px 15px 0;
     }
 
-    .containerFiltres {
+    .containerFiltre {
         display: flex;
         flex-direction: column;
     }
 
-    .filtres {
+    .filtre {
         display: grid;
         grid-template-columns: repeat(2, 150px);
         grid-gap: 15px;
@@ -491,7 +508,7 @@ figcaption {
 
     /* Partie populaire */
 
-    .cardPopulaireFlex {
+    .containerCardPopulaire {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -511,17 +528,16 @@ figcaption {
 
     /* Partie hébergement */
 
-    .grid-hebergement {
+    .containerHebergement {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 5px;
     }
 
     .cardHebergement {
         max-width: 300px;
         width: 100%;
         height: 199px;
+        margin: 2%;
     }
 
     .cardImageHebergement img {
@@ -532,7 +548,7 @@ figcaption {
 
     /* Partie Activité */
 
-    .flexActivités {
+    .containerActivite {
         flex-direction: column;
         align-items: center;
     }
@@ -540,17 +556,17 @@ figcaption {
     #activite h1 {
        display: flex;
        justify-content: center;
-       margin-right: 3.6em;
+       
     }
 
-    .imgActivités {
+    .cardImageActivite {
         width: 300px;
         height: 180px;  
     }
 
     /* Pied de page */
 
-    .pdp {
+    .piedDePage {
         flex-direction: column;
     }
 

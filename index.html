@@ -25,10 +25,10 @@
       </a>
       <nav>
         <div class="menu">
-          <div class="liensMenu">
+          <div class="lienMenu">
             <a href="#hebergement">Hébergements</a>
           </div>
-          <div class="liensMenu">
+          <div class="lienMenu">
             <a href="#activite">Activités</a>
           </div>
         </div>
@@ -51,9 +51,9 @@
         </form>
       </div>
       <div class="menuRecherche">
-        <div class="containerFiltres">
+        <div class="containerFiltre">
           <h3>Filtres</h3>
-          <div class="filtres">
+          <div class="filtre">
             <button class="buttonFiltre" id="buttonEconomique">
               <i class="fa-solid fa-money-bill-wave"></i>
               Économique
@@ -88,7 +88,7 @@
     <main class="contenuPrincipal">
       <section id="hebergement">
         <h1>Hébergements à Marseille</h1>
-        <div class="grid-hebergement">
+        <div class="containerHebergement">
           <a href="#" class="cardHebergement">
             <div class="cardImageHebergement">
               <img
@@ -96,7 +96,7 @@
                 alt="Auberge La Canebière"
               />
             </div>
-            <div class="texteCardHebergement">
+            <div class="cardContentHebergement">
               <div>
                 <h2>Auberge La Canebière</h2>
               </div>
@@ -118,7 +118,7 @@
                 alt="Hôtel du port"
               />
             </div>
-            <div class="texteCardHebergement">
+            <div class="cardContentHebergement">
               <div>
                 <h2>Hôtel du port</h2>
               </div>
@@ -140,7 +140,7 @@
                 alt="Hôtel Les mouettes"
               />
             </div>
-            <div class="texteCardHebergement">
+            <div class="cardContentHebergement">
               <div>
                 <h2>Hôtel Les mouettes</h2>
               </div>
@@ -155,6 +155,8 @@
               </div>
             </div>
           </a>
+        </div>
+        <div class="containerHebergement">
           <a href="#" class="cardHebergement">
             <div class="cardImageHebergement">
               <img
@@ -162,7 +164,7 @@
                 alt="Hôtel de la mer"
               />
             </div>
-            <div class="texteCardHebergement">
+            <div class="cardContentHebergement">
               <div>
                 <h2>Hôtel de la mer</h2>
               </div>
@@ -184,7 +186,7 @@
                 alt="Auberge Le Panier"
               />
             </div>
-            <div class="texteCardHebergement">
+            <div class="cardContentHebergement">
               <div>
                 <h2>Auberge Le Panier</h2>
               </div>
@@ -206,7 +208,7 @@
                 alt="Hôtel Chez Amina"
               />
             </div>
-            <div class="texteCardHebergement">
+            <div class="cardContentHebergement">
               <div>
                 <h2>Hôtel Chez Amina</h2>
               </div>
@@ -221,9 +223,9 @@
               </div>
             </div>
           </a>
-          <div class="afficherPlus">
-            <a href="#"><strong>Afficher plus</strong></a>
-          </div>
+        </div>
+        <div class="afficherPlus">
+          <a href="#"><strong>Afficher plus</strong></a>
         </div>
       </section>
       <!--Contenu principal partie 2, les plus populaires-->
@@ -232,7 +234,7 @@
           <h1>Les plus poupulaires</h1>
           <i class="fa-solid fa-chart-line"></i>
         </div>
-        <div class="cardPopulaireFlex">
+        <div class="containerCardPopulaire">
           <a href="#" class="cardPopulaire">
             <div class="cardImagePopulaire">
               <img
@@ -299,11 +301,11 @@
     <!--Deuxiéme partie du site, Activité-->
     <section id="activite">
       <h1>Activité à Marseille</h1>
-      <div class="flexActivités">
+      <div class="containerActivite">
         <a href="#">
-          <figure class="cartesActivités">
+          <figure class="cardActivite">
             <img
-              class="imgActivités"
+              class="cardImageActivite"
               src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="Vieux-Port, Marseille"
             />
@@ -311,9 +313,9 @@
           </figure>
         </a>
         <a href="#">
-          <figure class="cartesActivités">
+          <figure class="cardActivite">
             <img
-              class="imgActivités"
+              class="cardImageActivite"
               src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="Fort de Pomégues, Marseille"
             />
@@ -321,9 +323,9 @@
           </figure>
         </a>
         <a href="#">
-          <figure class="cartesActivités">
+          <figure class="cardActivite">
             <img
-              class="imgActivités"
+              class="cardImageActivite"
               src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="Parc national des Calanques, Marseille"
             />
@@ -331,9 +333,9 @@
           </figure>
         </a>
         <a href="#">
-          <figure class="cartesActivités">
+          <figure class="cardActivite">
             <img
-              class="imgActivités"
+              class="cardImageActivite"
               src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="Notre-Dame-de-la-Garde, Marseille"
             />
@@ -343,7 +345,7 @@
       </div>
     </section>
     <!--Pied de page-->
-    <footer class="pdp">
+    <footer class="piedDePage">
       <section class="cardFooter">
         <h2>À propos</h2>
         <a href="#">Fonctionnement du site</a>
