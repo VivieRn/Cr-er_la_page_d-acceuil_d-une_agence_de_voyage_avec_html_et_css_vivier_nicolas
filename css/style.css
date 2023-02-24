@@ -59,7 +59,7 @@ h2 {
 }
 
 section {
-    margin: 2em;
+    margin: 1.5em;
 }
 
 .fa-solid {
@@ -110,7 +110,6 @@ section {
 .recherche {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
     margin: 3px;
 }
@@ -119,6 +118,8 @@ section {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin: 0;
+    margin-right: 5px;
 }
 
 .info {
@@ -155,7 +156,7 @@ section {
 }
 
 .buttonFiltre{
-    margin: 1.5em;
+    margin: 10px;
     background-color: white;
     font-size: 1em;
     font-weight: 700;
@@ -174,7 +175,9 @@ section {
     height: 40px;
     width: 40px;
     cursor: pointer;
-    margin: 1em;
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 /* Comportement des boutons au survol */
@@ -206,45 +209,51 @@ button:hover {
 .contenuPrincipal {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    align-items: baseline;
+    margin-top: 0;
 }
 
 /* Partie Hébergements */
 
+.mainHebergement {
+    margin: 0;
+    display: flex;  
+    justify-content: space-between;
+}
+
 .containerHebergement {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+    width: 100%; 
+    padding: 40px;
+    border-radius: 30px;
   }
+
+.boxCardHebergement{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
 
 .cardHebergement {
     display: flex;
     flex-direction: column;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    max-width: 270px;
-    height: 220px;
-    width: 100%;
+    margin: 15px 0;
+    width: 32%;
+    height: 215px;
     cursor: pointer;
     overflow: hidden;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
-    margin: 1%;
-    
 }
 
-.cardImageHebergement {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
 
 .cardImageHebergement img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    height: 120px;
+    height: 110px;
     width: 265px;
-    margin: 5px;
+    
 }
 
 .cardContentHebergement {
@@ -257,50 +266,59 @@ button:hover {
 }
 
 .afficherPlus {
-    font-size: large;
+    padding-top: 50px;
+    font-weight: 900;
 }
 
 /* Gestion de la partie "Les plus populaires" */
 
-.populaire {
+.mainPopulaire {
     display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.titrePopulaire {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.boxCardPopulaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
 }
 
 .cardPopulaire {
     display: flex;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    max-width: 270px;
-    height: 190px;
-    width: 100%;
+    width: 80%;
+    min-width: 297px;
+    height: 170px;
     cursor: pointer;
     overflow: hidden;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.25);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   
-.cardImagePopulaire {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-  
 .cardImagePopulaire img {
-    border-radius: 20px 0 0 20px;
-    object-fit: cover;
     height: 180px;
     width: 120px;
-    margin: 5px;
+    object-fit: cover;
 }
   
 .cardContentPopulaire {
-    flex: 2;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5px;
+    width: 60%;
 }
 
 
@@ -355,6 +373,19 @@ figcaption {
       }
 }
 
+/* Adaptation fenetre desktops */
+
+@media (min-width: 992px) and (max-width: 1011px) {
+
+    .cardContentHebergement h2 {
+        font-size: medium;
+    }
+
+    .cardContentHebergement p {
+        font-size: small;
+    }
+}
+
 /* Adaptation pour les tablette */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -385,14 +416,19 @@ figcaption {
 
 /* Patie Populaire */    
 
-    .containerCardPopulaire {
+    .mainPopulaire {
+        width: 93%;
+        margin: 0;
+    }
+
+    .boxCardPopulaire {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .cardPopulaire {
-        margin: 1%;
+        min-width: 250px;
     }
 
 /* Partie Activité */
