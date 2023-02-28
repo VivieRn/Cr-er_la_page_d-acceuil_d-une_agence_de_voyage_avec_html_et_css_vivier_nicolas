@@ -20,8 +20,8 @@
   <body>
     <!--Entête avec menu de navigation-->
     <header class="entete">
-      <a href="index.html">
-        <img class="logo" src="images/logo/Booki.png" alt="logo booki" />
+      <a class="logo" href="index.html">
+        <img src="images/logo/Booki.png" alt="logo booki" />
       </a>
       <nav>
         <div class="menu">
@@ -53,23 +53,25 @@
       <div class="menuRecherche">
         <div class="containerFiltre">
           <h3>Filtres</h3>
-          <div class="filtre">
-            <button class="buttonFiltre" id="buttonEconomique">
-              <i class="fa-solid fa-money-bill-wave"></i>
-              Économique
-            </button>
-            <button class="buttonFiltre" id="buttonFamilial">
-              <i class="fa-solid fa-person"></i>
-              Familial
-            </button>
-            <button class="buttonFiltre" id="buttonRomantique">
-              <i class="fa-solid fa-heart"></i>
-              Romantique
-            </button>
-            <button class="buttonFiltre" id="buttonAnimaux">
-              <i class="fa-solid fa-dog"></i>
-              Animaux autorisés
-            </button>
+          <div class="boxFiltre">
+            <div class="filtre">
+              <button class="buttonFiltre" id="buttonEconomique">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                Économique
+              </button>
+              <button class="buttonFiltre" id="buttonFamilial">
+                <i class="fa-solid fa-person"></i>
+                Familial
+              </button>
+              <button class="buttonFiltre" id="buttonRomantique">
+                <i class="fa-solid fa-heart"></i>
+                Romantique
+              </button>
+              <button class="buttonFiltre" id="buttonAnimaux">
+                <i class="fa-solid fa-dog"></i>
+                Animaux autorisés
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -94,6 +96,13 @@
               <div class="cardImageHebergement">
                 <img
                   src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+                    images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  2997w,
+                    images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+                    images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   750w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Auberge La Canebière"
                 />
               </div>
@@ -116,6 +125,13 @@
               <div class="cardImageHebergement">
                 <img
                   src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 5472w,
+                    images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg  2736w,
+                    images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w,
+                    images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg   684w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Hôtel du port"
                 />
               </div>
@@ -138,6 +154,13 @@
               <div class="cardImageHebergement">
                 <img
                   src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w,
+                    images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg  3000w,
+                    images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w,
+                    images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg   750w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Hôtel Les mouettes"
                 />
               </div>
@@ -160,6 +183,13 @@
               <div class="cardImageHebergement">
                 <img
                   src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4000w,
+                    images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg  2000w,
+                    images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w,
+                    images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg   500w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Hôtel de la mer"
                 />
               </div>
@@ -182,6 +212,13 @@
               <div class="cardImageHebergement">
                 <img
                   src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 5212w,
+                    images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  2606w,
+                    images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1303w,
+                    images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg   652w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Auberge Le Panier"
                 />
               </div>
@@ -204,6 +241,13 @@
               <div class="cardImageHebergement">
                 <img
                   src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3888w,
+                    images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  1944w,
+                    images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  972w,
+                    images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg   486w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Hôtel Chez Amina"
                 />
               </div>
@@ -231,7 +275,7 @@
       <!--Contenu principal partie 2, les plus populaires-->
       <section class="mainPopulaire">
         <div class="titrePopulaire">
-          <h1>Les plus poupulaires</h1>
+          <h1>Les plus populaires</h1>
           <i class="fa-solid fa-chart-line"></i>
         </div>
         <div class="containerCardPopulaire">
@@ -240,6 +284,13 @@
               <div class="cardImagePopulaire">
                 <img
                   src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w,
+                    images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg  2125w,
+                    images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w,
+                    images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg   532w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Hôtel Le soleil du matin"
                 />
               </div>
@@ -260,6 +311,13 @@
               <div class="cardImagePopulaire">
                 <img
                   src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w,
+                    images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg  2016w,
+                    images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w,
+                    images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg   504w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Chambres d'hôtes au coeur de l'eau"
                 />
               </div>
@@ -280,6 +338,13 @@
               <div class="cardImagePopulaire">
                 <img
                   src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  srcset="
+                    images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w,
+                    images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg  2000w,
+                    images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w,
+                    images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg   500w
+                  "
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
                   alt="Hôtel Bleu et Blanc"
                 />
               </div>
@@ -302,68 +367,98 @@
     </main>
     <!--Deuxiéme partie du site, Activité-->
     <section id="activite">
-      <h1>Activité à Marseille</h1>
-      <div class="containerActivite">
-        <a href="#">
-          <figure class="cardActivite">
-            <img
-              class="cardImageActivite"
-              src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="Vieux-Port, Marseille"
-            />
-            <figcaption>Vieux-Port</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="cardActivite">
-            <img
-              class="cardImageActivite"
-              src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt="Fort de Pomégues, Marseille"
-            />
-            <figcaption>Fort de Pomégues</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="cardActivite">
-            <img
-              class="cardImageActivite"
-              src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Parc national des Calanques, Marseille"
-            />
-            <figcaption>Parc national des Calanques</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="cardActivite">
-            <img
-              class="cardImageActivite"
-              src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="Notre-Dame-de-la-Garde, Marseille"
-            />
-            <figcaption>Notre-Dame-de-la-Garde</figcaption>
-          </figure>
-        </a>
+      <div class="boxActivite">
+        <h1>Activité à Marseille</h1>
+        <div class="containerActivite">
+          <a class="cardActivite" href="#">
+            <figure>
+              <img
+                class="cardImageActivite"
+                src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                srcset="
+                  images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 5616w,
+                  images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg  2808w,
+                  images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1404w,
+                  images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg   702w
+                "
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                alt="Vieux-Port, Marseille"
+              />
+              <figcaption>Vieux-Port</figcaption>
+            </figure>
+          </a>
+          <a class="cardActivite" href="#">
+            <figure>
+              <img
+                class="cardImageActivite"
+                src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                srcset="
+                  images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2843w,
+                  images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg  1422w,
+                  images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg  711w,
+                  images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg   356w
+                "
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                alt="Fort de Pomégues, Marseille"
+              />
+              <figcaption>Fort de Pomégues</figcaption>
+            </figure>
+          </a>
+          <a class="cardActivite" href="#">
+            <figure>
+              <img
+                class="cardImageActivite"
+                src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                srcset="
+                  images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4846w,
+                  images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg  2423w,
+                  images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1212w,
+                  images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg   606w
+                "
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                alt="Parc national des Calanques, Marseille"
+              />
+              <figcaption>Parc national des Calanques</figcaption>
+            </figure>
+          </a>
+          <a class="cardActivite" href="#">
+            <figure>
+              <img
+                class="cardImageActivite"
+                src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                srcset="
+                  images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4712w,
+                  images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg  2356w,
+                  images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1178w,
+                  images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg   589w
+                "
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                alt="Notre-Dame-de-la-Garde, Marseille"
+              />
+              <figcaption>Notre-Dame-de-la-Garde</figcaption>
+            </figure>
+          </a>
+        </div>
       </div>
     </section>
     <!--Pied de page-->
     <footer class="piedDePage">
-      <section class="cardFooter">
+      <div class="cardFooter">
         <h2>À propos</h2>
         <a href="#">Fonctionnement du site</a>
         <a href="#">Conditions générales</a>
         <a href="#">Données et confidentialité</a>
-      </section>
-      <section class="cardFooter">
+      </div>
+      <div class="cardFooter">
         <h2>Nos hébergements</h2>
         <a href="#">Charte qualité</a>
         <a href="#">Proposer votre hôtel</a>
-      </section>
-      <section class="cardFooter">
+      </div>
+      <div class="cardFooter">
         <h2>Assistance</h2>
         <a href="#">Centre d'aide</a>
         <a href="#">Nous contacter</a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
