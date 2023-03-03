@@ -225,7 +225,6 @@ button:hover {
 .containerHebergement {
     width: 100%; 
     padding: 4%;
-    border-radius: 30px;
   }
 
 .boxCardHebergement{
@@ -252,7 +251,7 @@ button:hover {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     height: 110px;
-    width: 265px;
+    width: 280px;
     
 }
 
@@ -318,7 +317,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 1%;
     margin-bottom: 3px;
     padding: 10px;
     width: 60%;
@@ -373,21 +372,22 @@ figcaption {
 /* Adaptation pour desktop */
 
 @media (min-width: 1401px) {
+   
     body {
         max-width: 1400px;
         margin: auto;
       }
 }
 
-/* Adaptation fenetre desktops */
-
-@media (max-width: 1039px) {
+@media (max-width: 1079px) {
     .titrePopulaire {
         font-size: 80%;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1039px) {
+
+    
 
     .cardContentPopulaire {
         font-size: 99%;
@@ -425,6 +425,7 @@ figcaption {
     .contenuPrincipal {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
 /* Partie hébergement */
@@ -436,8 +437,12 @@ figcaption {
 /* Patie Populaire */    
 
     .mainPopulaire {
-        width: 90%;
-        margin: 0;
+        width: 92%;
+        margin-bottom: 5%;
+    }
+
+    .titrePopulaire {
+        font-size: 100%;
     }
 
     .boxCardPopulaire {
@@ -448,23 +453,28 @@ figcaption {
 
 /* Partie Activité */
 
+    .boxActivite {
+        margin: 3%;
+    }
+
     .containerActivite a {
-        margin: 1%;
-        margin-bottom: 5em;
+        margin-bottom: 1em;
     }
 
 /* Partie Pied de page */    
 
     .piedDePage {
-        margin-bottom: 3em;
+        justify-content: flex-start;
+    }
+
+    .cardFooter {
+        margin: 4%;
     }
 }
 
 /* Adaptation pour smartphone */
 
 @media (max-width: 767px) {
-
-   
 
     section {
         text-align: left;
@@ -616,6 +626,7 @@ figcaption {
     .mainPopulaire {
         width: 90%;
         justify-content: center;
+        margin: 1em;
     }
 
     .boxCardPopulaire {
@@ -673,22 +684,22 @@ figcaption {
     /* Partie Activité */
 
     .boxActivite {
-        width: 90%;
+        width: 95%;
         display: flex;
         flex-direction: column;
-        padding: 25px;
+        margin: 1%;
     }
 
     .containerActivite {
         width: 100%;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
     .cardActivite {
         width: 80%;
         object-fit: cover;
-        margin-left: 1em;
     }
 
     .cardImageActivite {
@@ -706,7 +717,7 @@ figcaption {
     .cardFooter {
         margin: 0;
         margin-bottom: 15px;
-        padding-left: 5em;
+        padding-left: 5%;
     }
 }
 
@@ -722,6 +733,9 @@ figcaption {
 
 @media (max-width: 396px) {
 
+    input[type="text"] {
+        font-size: 70%;
+    }
 
     .lienMenu a {
         font-size: 80%;
@@ -747,11 +761,24 @@ figcaption {
         font-size: 50%;
     }
 
-    .cardContentPopulaire {
-        font-size: 99%;
+    .cardContentPopulaire h2 {
+        font-size: 85%;
+    }
+
+    .cardContentHebergement p {
+        font-size: 80%;
+    }
+
+    .cardContentHebergement h2 {
+        font-size: 85%;
+    }
+
+    .cardContentPopulaire p {
+        font-size: 80%;
     }
 
     .fa-star {
-        font-size: 70%;
+        font-size: 40%;
     }
+
 }
