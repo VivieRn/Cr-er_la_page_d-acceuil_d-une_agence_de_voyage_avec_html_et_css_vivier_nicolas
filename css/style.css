@@ -224,7 +224,7 @@ button:hover {
 
 .containerHebergement {
     width: 100%; 
-    padding: 40px;
+    padding: 4%;
     border-radius: 30px;
   }
 
@@ -276,7 +276,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 40px;
+    padding: 1%;
     border-radius: 30px;
 }
 
@@ -380,6 +380,12 @@ figcaption {
 }
 
 /* Adaptation fenetre desktops */
+
+@media (max-width: 1039px) {
+    .titrePopulaire {
+        font-size: 80%;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1039px) {
 
