@@ -375,7 +375,7 @@ figcaption {
 @media (min-width: 1401px) {
     body {
         max-width: 1400px;
-        margin: 0 auto;
+        margin: auto;
       }
 }
 
@@ -411,6 +411,7 @@ figcaption {
 
     .buttonFiltre {
         padding: 15px;
+        font-size: 90%;
     }
 
 /* Contenu principal */    
@@ -457,9 +458,7 @@ figcaption {
 
 @media (max-width: 767px) {
 
-    body {
-        width: 100%;
-    }
+   
 
     section {
         text-align: left;
@@ -491,14 +490,10 @@ figcaption {
         justify-content: center;
     }
 
-    .lienMenu{
-        justify-content: space-around;
-        font-size: medium;
-    }
-
     .lienMenu {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        font-size: 100%;
         width: 100%;
         padding: 1em;
     }
@@ -595,7 +590,6 @@ figcaption {
     }
 
     .buttonFiltre {
-        width: 100%;
         font-size: 75%;
         text-align: left;
         padding: 4%;
@@ -722,8 +716,13 @@ figcaption {
 
 @media (max-width: 396px) {
 
+
+    .lienMenu a {
+        font-size: 80%;
+    }
+
     .filtre {
-        grid-template-columns: repeat(2, 95%);
+        grid-template-columns: repeat(2, 60%);
     }
 
     .buttonFiltre {
@@ -733,6 +732,15 @@ figcaption {
 }
 
 @media (max-width: 280px) {
+
+    .filtre {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .buttonFiltre {
+        font-size: 50%;
+    }
+
     .cardContentPopulaire {
         font-size: 99%;
     }
