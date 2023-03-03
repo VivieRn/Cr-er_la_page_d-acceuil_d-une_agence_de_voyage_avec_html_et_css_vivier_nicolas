@@ -299,7 +299,7 @@ button:hover {
     display: flex;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    width: 85%;
+    width: 100%;
     height: 170px;
     cursor: pointer;
     overflow: hidden;
@@ -318,7 +318,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    padding: 10px;
     width: 60%;
 }
 
@@ -329,7 +331,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .cardActivite {
@@ -358,14 +360,14 @@ figcaption {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
-    margin-bottom: 3em;
+    justify-content: start;
 }
 
 .cardFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 8%;
 }
 
 /* Adaptation pour desktop */
@@ -381,20 +383,8 @@ figcaption {
 
 @media (min-width: 992px) and (max-width: 1039px) {
 
-    .cardContentHebergement h2 {
-        font-size: medium;
-    }
-
-    .cardContentHebergement p {
-        font-size: small;
-    }
-
-    .cardContentPopulaire h2 {
-        font-size: medium;
-    }
-
-    .cardContentPopulaire p {
-        font-size: small;
+    .cardContentPopulaire {
+        font-size: 99%;
     }
 
     .fa-star {
@@ -720,7 +710,7 @@ figcaption {
     }
 }
 
-/* Adaptation des cartes pour petits écrans smartphone */
+/* Adaptation pour petits écrans smartphone */
 
 @media (max-width: 643px) {
 
@@ -739,5 +729,15 @@ figcaption {
     .buttonFiltre {
         font-size: 60%;
         padding: 1%;
+    }
+}
+
+@media (max-width: 280px) {
+    .cardContentPopulaire {
+        font-size: 99%;
+    }
+
+    .fa-star {
+        font-size: 70%;
     }
 }
