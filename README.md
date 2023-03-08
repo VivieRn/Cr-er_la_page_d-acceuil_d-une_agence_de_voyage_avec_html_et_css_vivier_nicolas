@@ -1,6 +1,6 @@
 Réalisation du projet 2 de la formation développeur web d'OpenClassrooms. Création de la page d'accueil de Booki.
 
-La liste des classes, ci-dessous, est organisé dans le même ordre que le HTML & CSS.
+La liste des classes, ci-dessous, est organisée dans le même ordre que le HTML & CSS.
 
 Liste des classes :
 
