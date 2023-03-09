@@ -46,7 +46,7 @@ table {
 
 /* Fonctions générales */
 
-h1, h2, h3, p, a {
+*, a {
     margin: 0;
     margin-bottom: 15px;
     font-family: 'Raleway', sans-serif;
@@ -54,8 +54,9 @@ h1, h2, h3, p, a {
     text-decoration: none;
 }
 
-h2 {
-    font-size: large;
+.title {
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 section {
@@ -214,6 +215,16 @@ button:hover {
     margin-top: 0;
 }
 
+.titleMain {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.titleCard {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
 /* Partie Hébergements */
 
 .mainHebergement {
@@ -225,6 +236,7 @@ button:hover {
 .containerHebergement {
     width: 100%; 
     padding: 4%;
+    background-color: #f2f2f2;
   }
 
 .boxCardHebergement{
@@ -265,8 +277,9 @@ button:hover {
 }
 
 .afficherPlus {
-    padding-top: 50px;
-    font-weight: bold;
+    padding-top: 40px;
+    font-size: large;
+    font-weight: bolder;
 }
 
 /* Gestion de la partie "Les plus populaires" */
@@ -298,7 +311,7 @@ button:hover {
     display: flex;
     border: 2px solid white;
     border-radius: 20px 20px 20px 20px;
-    width: 100%;
+    width: 90%;
     height: 170px;
     cursor: pointer;
     overflow: hidden;
@@ -334,13 +347,15 @@ button:hover {
 }
 
 .cardActivite {
+    max-width: 290px;
     width: 100%;
+    height: 400px;
     margin: 10px;
 }
 
 .cardImageActivite {
-    max-width: 240px;
-    height: 320px;
+    max-width: 290px;
+    height: 400px;
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -349,7 +364,7 @@ button:hover {
 figcaption {
     padding-left: 16px;
     margin-top: 5%;
-    font-size: 80%;
+    font-size: 90%;
     font-weight: 600;
 }
 
@@ -367,6 +382,7 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     margin: 8%;
+    margin-bottom: 2%;
 }
 
 /* Adaptation pour desktop */
@@ -387,7 +403,9 @@ figcaption {
 
 @media (min-width: 992px) and (max-width: 1039px) {
 
-    
+    .titleCard {
+        font-size: 1.2em;
+    }
 
     .cardContentPopulaire {
         font-size: 99%;
@@ -450,15 +468,26 @@ figcaption {
         flex-direction: row;
         justify-content: flex-start;
     }
+    
+    .cardPopulaire {
+        width: 100%;
+    }
 
 /* Partie Activité */
 
-    .boxActivite {
-        margin: 3%;
-    }
+    
 
     .containerActivite a {
         margin-bottom: 1em;
+    }
+
+    .cardActivite {
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .cardImageActivite {
+        height: 240px;
     }
 
 /* Partie Pied de page */    
@@ -629,6 +658,10 @@ figcaption {
         margin: 1em;
     }
 
+    .titrePopulaire {
+        font-size: 100%;
+    }
+
     .boxCardPopulaire {
         align-items: center;
     }
@@ -684,7 +717,7 @@ figcaption {
     /* Partie Activité */
 
     .boxActivite {
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 1%;
@@ -693,19 +726,24 @@ figcaption {
     .containerActivite {
         width: 100%;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
     .cardActivite {
+        max-width: 545px;
         width: 80%;
+        height: 220px;
         object-fit: cover;
     }
 
     .cardImageActivite {
-        max-height: 180px;
-        max-width: 550px;
+        height: 170px;
+        max-width: 540px;
         width: 100%;
+    }
+
+    figcaption {
+        margin-top: 3%;
     }
 
     /* Pied de page */
@@ -761,16 +799,12 @@ figcaption {
         font-size: 50%;
     }
 
-    .cardContentPopulaire h2 {
-        font-size: 85%;
+    .titleCard {
+        font-size: 1.2em;
     }
 
     .cardContentHebergement p {
         font-size: 80%;
-    }
-
-    .cardContentHebergement h2 {
-        font-size: 85%;
     }
 
     .cardContentPopulaire p {
